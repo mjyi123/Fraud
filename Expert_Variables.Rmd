@@ -1,0 +1,33 @@
+---
+title: "Expert_Variables"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Import Packages
+
+```{r}
+library(dplyr)
+```
+
+# Read In Data
+
+```{r}
+df <- read.csv('Dataset/UnfinishedCleaningData.csv')
+```
+
+# ZIP5
+
+```{r}
+ZIP5 <- df %>%
+  group_by("ZIP") %>%
+  summarise(mean = mean())
+```
+
+```{r}
+df.names
+```
+
