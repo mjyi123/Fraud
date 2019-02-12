@@ -31,3 +31,7 @@ ZIP5 <- df %>%
 df.names
 ```
 
+```{r}
+df <- read.csv('/Users/chengyinliu/PCA_New.xlsx')
+```
+
